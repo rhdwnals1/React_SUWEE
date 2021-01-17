@@ -15,79 +15,47 @@
 - 2020년 11월 30일 ~ 2020년 12월 11일(12일)
 
 
-# # 작업 결과물 🎥
- [![Youtube Badge](https://img.shields.io/badge/Youtube-ff0000?style=for-the-badge&logo=youtube&link=https://www.youtube.com/watch?v=6GdUdEkhyzQ&t=45s)](https://www.youtube.com/watch?v=6GdUdEkhyzQ&t=45s) (Click!)
+# # 작업 결과물 (Click!) 🎥
+ [![Youtube Badge](https://img.shields.io/badge/Youtube-ff0000?style=for-the-badge&logo=youtube&link=https://www.youtube.com/watch?v=6GdUdEkhyzQ&t=45s)](https://www.youtube.com/watch?v=6GdUdEkhyzQ&t=45s)
 
 
 # # 작업 인원 🧑🏻‍💻
-- 2명(Front-End)
+- 3명(Front-End)
 
 
 ## # 기술 스택/툴 🛠
 
 #### # Front-end
 
-- HTML,Sass
-- JavaScript ES6+
-- React(class 컴포넌트)
-- Slick (library)
-- Git, GitHub
-
-## # 구현한 페이지 (혹은 컴포넌트)📔
-
-### 메인 홈페이지 이미지 슬라이더 기능 구현
- - 타이머 기능 구현으로 인한 일정 시간마다 이미지 슬라이더 기능 구현
-
-### 메인 하단 상품 리스트 API를 통한 상품 진열 기능 구현
- - 더보기 버튼 클릭시 상품 페이지네이션 기능 구현
- - 메인 홈페이지 상품 API 수신 및 진열 기능 구현
-
-### 상품 리스트 페이지 API로 상품 진열 및 필터링 기능 구현
- - 쿼리스트링으로 인한 빠른배송,세일,최신순,가격순,낮은가격순 filter 정렬 기능
-
-### 상세 페이지 사이즈,컬러,구매 선택시 가격 및 수량 적용 기능 구현
- - 쿼리스트링으로 제품 디테일 정보 레이아웃 구성 및 화면 출력가능 
- - Scroll 및 Ref 기능으로 스크롤 이동시 div 태그 색상 변환 기능구현
-
-### 이용약관 및 회원가입 기능 구현
- - 아이디 비밀번호 Validation 기능 구현
- - 로그인 및 회원가입 기능
-
-
-.////////////////////
-
-## 팀원
-
-- 고수희 (BE, PM)
-- 백승진 (BE)
-- 정현석 (BE)
-- 신세원 (FE)
-- 공주민 (FE)
-- 류지혜 (FE)
-
-## 기술 스택/툴
-
-#### Front-end
-
 - HTML
 - JavaScript ES6+
 - React (CRA, Router, Hooks)
-- Redux
 - Styled Component
 - IMPort API (payment)
 - AOS (library)
 - Slick (library)
 - Git(git rebase), GitHub
 
-#### Back-end
+## # 구현한 페이지 (혹은 컴포넌트)📔
 
-- Python
-- Django
-- PyJWT
-- Bcrypt
+(⚡️표시는 본인이 구현한 기능)
 
-## 구현한 페이지 (혹은 컴포넌트)
-
-- 신세원 : Login 페이지, Signup 페이지, Payments 페이지
-- 공주민 : 상세페이지, 데이터 시각화
-- 류지혜 : 메인페이지, 내 서재(마이페이지)
+- access token를 이용한 로그인(+카카오), 회원가입, 로그아웃 기능 및 유효성 검사⚡︎
+- 카카오 API를 이용한 소셜 로그인⚡︎
+- Twilio API를 이용한 문자 인증 기능 ⚡︎
+- IMPort API를 이용한 카카오페이 결제 기능 ⚡︎
+- AOS library를 이용한 렌딩 페이지 애니메이션 구현⚡︎
+- 정기 구독 버튼으로 결제 페이지 이동 기능⚡︎
+- Nav바 로그인,로그아웃 버튼 기능(버튼 누름과 동시에 토큰 삭제 기능)⚡︎
+- 사용자 댓글 추가 기능, 좋아요 기능⚡︎
+- query string을 통해 filtering된 data 서버로부터 받아오기
+- map 메소드를 통해, 카테고리 페이지 전체의 데이터(텍스트, 이미지 등)를 받아 화면 구성하기
+- 도서 상세 페이지에서 책 담으면, 사용자 내서재에 담기는 기능
+- 책 뷰어 기능
+- query string url 을 사용한 상세페이지 연결 구현
+- 상세페이지의 레이아웃 구현
+- 제품 키워드 검색 기능 구현
+- 높은가격순, 낮은가격순 ordering 기능
+- Slick Slider로 슬라이드 배너 구현
+- 장바구니 기능
+- 카테고리 분류 기능
