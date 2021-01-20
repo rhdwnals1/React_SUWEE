@@ -19,7 +19,7 @@ function Comment() {
     if (value.trim() === "") return "";
     prevComments.push({
       id: Date.now(),
-      nickName: "s_sewon",
+      nickName: "im_zulie",
       date: "2020.12.11",
       content: value,
       count: 0,
