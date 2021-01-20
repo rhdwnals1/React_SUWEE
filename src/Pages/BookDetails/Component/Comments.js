@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-import { INFO_API } from "../../../config";
+import { FIRST_API } from "../../../config";
 
 function Comments() {
   const [info, setInfo] = useState([]);
   const [heartColor, setHeartColor] = useState(false);
 
   useEffect(() => {
-    fetch(`${INFO_API}/24/review`)
+    fetch(FIRST_API)
       .then((res) => res.json())
-      .then((res) => setInfo(res.review_list));
+      .then((res) => setInfo(res.Review.Comment));
   }, []);
 
   const handleOnClick = (item) => {
@@ -46,9 +46,9 @@ function Comments() {
           <CommentBox>
             <img src={item.user_img} alt={item.alt} />
             <CommentInfo>
-              <div>{item.nick_name}</div>
-              <div>{item.created_at}</div>
-              <div>{item.content}</div>
+              <div>{item.user_name}</div>
+              <div>{item.date}</div>
+              <div>{item.text}</div>
               <span>이 리뷰가 마음에 드시나요?</span>
               <Heart id={item.id} onClick={() => handleOnClick(item)}>
                 <img

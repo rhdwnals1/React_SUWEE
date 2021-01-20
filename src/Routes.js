@@ -30,7 +30,7 @@ class Routes extends Component {
             <Route exact path="/agreement" component={Agreement} />
             <Route exact path="/payment" component={Payment} />
             <Route exact path="/SuweeMain" component={SuweeMain} />
-            <Route exact path="/detail:id" component={BookDetails} />
+            <Route exact path="/detail" component={BookDetails} />
             <Route exact path="/BookRoom" component={BookRoom} />
             <Route exact path="/" component={LandingPage} />
           </Switch>

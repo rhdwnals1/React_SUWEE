@@ -5,16 +5,16 @@ import {
   boxShadow,
   line,
 } from "../../../src/Styles/CommonStyle";
-import { INFO_API, FIRST_API } from "../../config";
+import { FIRST_API } from "../../config";
 
 function FirstSection() {
   const [info, setInfo] = useState([]);
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch(`${INFO_API}/12`)
+    fetch(FIRST_API)
       .then((res) => res.json())
-      .then((res) => setInfo(res.book_detail));
+      .then((res) => setInfo(res.FirstSection.BookInfo));
 
     fetch(FIRST_API)
       .then((res) => res.json())
@@ -25,11 +25,11 @@ function FirstSection() {
   return (
     <FirstContainer>
       <Img>
-        <img src={info.image_url} alt="book" />
+        <img src={info.img_url} alt="book" />
       </Img>
       <Wrapper>
         <BookInfo>
-          <BookName>{info.title}</BookName>
+          <BookName>{info.book_name}</BookName>
           <Author>{info.author}</Author>
           <div className="text">
             내 서재에 담긴 책 5권 이상부터 취향지수 제공

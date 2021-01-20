@@ -4,7 +4,6 @@ import { componentGuide, line } from "../../../src/Styles/CommonStyle";
 import { FIRST_API, INFO_API } from "../../config";
 
 function IntroduceBook() {
-  const [info, setInfo] = useState([]);
   const [text, setText] = useState([]);
   const [data, setData] = useState([]);
   const [list, setList] = useState([]);
@@ -16,10 +15,6 @@ function IntroduceBook() {
   // console.log(`${INFO_API}/12`);
 
   useEffect(() => {
-    fetch(`${INFO_API}/12`)
-      .then((res) => res.json())
-      .then((res) => setInfo(res.book_detail));
-
     fetch(FIRST_API)
       .then((res) => res.json())
       .then((res) => setText(res.ThirdSection.Content));
@@ -39,7 +34,7 @@ function IntroduceBook() {
         <h1>책 소개</h1>
         <BookContent>
           <FirstContent className={closed ? "" : "close"}>
-            {info.description}
+            {text.Content}
           </FirstContent>
         </BookContent>
         <Button onClick={toggleMoreBtn}>
