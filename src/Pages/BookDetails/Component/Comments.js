@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-import { FIRST_API, INFO_API } from "../../../config";
+import { FIRST_API } from "../../../config";
 
 function Comments() {
   const [info, setInfo] = useState([]);
