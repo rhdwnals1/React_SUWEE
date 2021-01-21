@@ -1,4 +1,4 @@
-const IP_ADDRESS = '13.125.154.100';
+const IP_ADDRESS = "13.125.154.100";
 
 // Main
 
@@ -24,21 +24,21 @@ export const BOOKROOM_USER_API = `http://${IP_ADDRESS}:8000/library`;
 
 //Login
 export const KAKAO_API =
-  'http://ec2-13-125-154-100.ap-northeast-2.compute.amazonaws.com:8000/user/kakao_sign_in';
+  "http://ec2-13-125-154-100.ap-northeast-2.compute.amazonaws.com:8000/user/kakao_sign_in";
 export const CERTIFY_REQUEST =
-  'http://ec2-13-125-154-100.ap-northeast-2.compute.amazonaws.com:8000/user/authSMS';
+  "http://ec2-13-125-154-100.ap-northeast-2.compute.amazonaws.com:8000/user/authSMS";
 export const DUBBLE_CHECK =
-  'http://ec2-13-125-154-100.ap-northeast-2.compute.amazonaws.com:8000/user/sign_up';
+  "http://ec2-13-125-154-100.ap-northeast-2.compute.amazonaws.com:8000/user/sign_up";
 export const SIGN_IN =
-  'http://ec2-13-125-154-100.ap-northeast-2.compute.amazonaws.com:8000/user/sign_in';
-export const TEST = 'http://test';
+  "http://ec2-13-125-154-100.ap-northeast-2.compute.amazonaws.com:8000/user/sign_in";
+export const TEST = "http://test";
 
-export const LIBRARY_IMG = './images/library.png';
+export const LIBRARY_IMG = "/images/libraryimg.png";
 
-export const CHECK_IMG = './images.checked.png';
+export const CHECK_IMG = "/images/checked.png";
 
-export const FIRST_API = '/data/data.json';
+export const FIRST_API = "/data/data.json";
 
-export const INFO_API = 'http://192.168.200.184:8000/books';
-export const REVIEW_API = 'http://192.168.200.184:8000/books/24/review';
+export const INFO_API = "http://192.168.200.184:8000/books";
+export const REVIEW_API = "http://192.168.200.184:8000/books/24/review";
 export const BOOKROOM_STATISTIC_API = `http://${IP_ADDRESS}:8000/library/statistics`;

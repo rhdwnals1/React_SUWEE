@@ -113,5 +113,69 @@
       "time": "1시간 30분",
       "average": "2시간 15분"
     }
+  },
+  "Recommend": {
+    "Book": [
+      {
+        "id": 0,
+        "src": "/images/1.jpg",
+        "name": "아무튼, 술",
+        "author": "김혼비"
+      },
+      {
+        "id": 1,
+        "src": "/images/2.jpg",
+        "name": "아무튼, 메모",
+        "author": "정혜윤(지은이)"
+      },
+      {
+        "id": 2,
+        "src": "/images/3.jpg",
+        "name": "돈지랄의 기쁨과 슬픔",
+        "author": "신예희(지은이)"
+      },
+      {
+        "id": 3,
+        "src": "/images/4.jpg",
+        "name": "어른은 아니고 서른입니다",
+        "author": "니나킴(지은이)"
+      },
+      {
+        "id": 4,
+        "src": "/images/5.jpg",
+        "name": "스님의 주례사",
+        "author": "법륜 저, 김점선 그림"
+      },
+      {
+        "id": 5,
+        "src": "/images/6.jpg",
+        "name": "혼자 있기 좋은 방",
+        "author": "우지현"
+      },
+      {
+        "id": 6,
+        "src": "/images/7.jpg",
+        "name": "카카오 프렌즈 러브 1",
+        "author": "지은이 오쭈 | 그림 흑부"
+      },
+      {
+        "id": 7,
+        "src": "/images/8.jpg",
+        "name": "블랙 코미디",
+        "author": "유병재"
+      },
+      {
+        "id": 8,
+        "src": "/images/9.jpg",
+        "name": "타인의 시선을 의식해 힘든 나에게",
+        "author": "글배우"
+      },
+      {
+        "id": 9,
+        "src": "/images/10.jpg",
+        "name": "책 좀 빌려줄래?",
+        "author": "그랜트 스나이더(지은이)"
+      }
+    ]
   }
 }

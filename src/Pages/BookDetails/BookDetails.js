@@ -4,6 +4,7 @@ import SecondSection from "./SecondSection";
 import IntroduceBook from "./IntroduceBook";
 import Aside from "./Aside";
 import Comment from "./Comment";
+import SlickSlider from "./SlickSlider";
 import styled from "styled-components";
 
 function BookDetails() {
@@ -14,8 +15,9 @@ function BookDetails() {
         <FirstSection />
         <SecondSection />
         <IntroduceBook />
-        <ImageBox img src="./images/imgbox.png" alt="img" />
         <Comment />
+        <ImageBox img src="/images/imgbox.png" alt="img" />
+        <SlickSlider />
       </Wrapper>
       <Aside />
     </Main>
@@ -36,11 +38,10 @@ const Wrapper = styled.div`
   width: 999px;
 `;
 
-const ImageBox = styled.div`
-  img {
-    width: 100%;
-    height: 150px;
-  }
+const ImageBox = styled.img`
+  width: 100%;
+  height: 150px;
+  margin-bottom: 1px;
 `;
 
 export default BookDetails;

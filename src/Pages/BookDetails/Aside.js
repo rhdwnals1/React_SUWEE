@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { LIBRARY_IMG, CHECK_IMG } from "../../config";
 
 function Aside({
   setIsActiveReadNow,
@@ -13,19 +12,23 @@ function Aside({
     <AsideContainer>
       <Wrapper>
         <List>
-          <Menu isSaved={isSaved} setIsSaved={setIsSaved}>
+          {/* <Menu isSaved={isSaved} setIsSaved={setIsSaved}>
             <img src={isSaved ? LIBRARY_IMG : CHECK_IMG} alt="save" />
             <button onClick={onSave}>
               내 서재에 담기
               {isSaved ? "담기 완료" : "내 서재에 담기"}
             </button>
+          </Menu> */}
+          <Menu>
+            <img src="/images/libraryimg.png" alt="save" />
+            <div>내 서재에 담기</div>
           </Menu>
           <Menu>
-            <img src="./images/write.png" alt="post" />
+            <img src="/images/write.png" alt="post" />
             <div>포스트 쓰기</div>
           </Menu>
           <Menu>
-            <img src="./images/share.png" alt="share" />
+            <img src="/images/share.png" alt="share" />
             <div>공유하기</div>
           </Menu>
         </List>

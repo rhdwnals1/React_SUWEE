@@ -62,6 +62,11 @@ export const boxShadow = css`
     0 0 2px rgba(0, 0, 0, 0.24);
 `;
 
+export const bookShadow = css`
+  box-shadow: 8px 4px 20px rgba(0, 0, 0, 0.2), 0 4px 4px rgba(0, 0, 0, 0.1),
+    0 0 2px rgba(0, 0, 0, 0.24);
+`;
+
 export const line = css`
   width: 1px;
   height: 60%;
